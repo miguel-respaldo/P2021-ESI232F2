@@ -26,6 +26,6 @@ print(s1[0:4]) # Subcadena del 0 y menor que 4
 print(s1[4:9]) #imprimir ritmo
 
 ## s1 es "Algoritmos"
-print("algo" in s1)
-print("gramo" in s2)
-
+print("algo"  in s1)  # imprime false
+print("gramo" in s2)  # imprime false
+print("Algo"  in s1)  # imprime false
