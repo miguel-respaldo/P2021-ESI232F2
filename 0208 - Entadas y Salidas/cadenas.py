@@ -17,3 +17,4 @@ print(s3[0]) # imprime "u"
 print(s3[5]) # imprime "x"
 print(s3[7]) # imprime "o"
 
+print("---",s3[2],"---")  # tambien los espacios en blanco cuentan
