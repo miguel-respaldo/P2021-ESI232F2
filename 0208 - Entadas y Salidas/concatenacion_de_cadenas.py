@@ -28,4 +28,14 @@ print(s1[4:9]) #imprimir ritmo
 ## s1 es "Algoritmos"
 print("algo"  in s1)  # imprime false
 print("gramo" in s2)  # imprime false
-print("Algo"  in s1)  # imprime false
+print("Algo"  in s1)  # imprime true
+
+# ABCDE ... abcdefg
+# 1232435465
+
+print("asa" < "oso")
+print("cosa" <= "cosas")
+print("CASA" >= "casa")
+print("casas">= "casa")
+print("hola" == "HOLA")
+print("mama" != "papa")
