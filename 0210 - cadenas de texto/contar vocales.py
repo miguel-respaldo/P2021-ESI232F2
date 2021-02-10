@@ -8,3 +8,9 @@
 #         1 i
 #         2 o
 #         0 u
+palabra = input("Ingresa una palabra: ")
+print(palabra.count("a"),"a")
+print(palabra.count("e"),"e")
+print(palabra.count("i"),"i")
+print(palabra.count("o"),"o")
+print(palabra.count("u"),"u")
