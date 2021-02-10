@@ -18,6 +18,6 @@ print("Número de o:", s.count("o"))
 ## Elimando espacios en blanco en cadenas
 
 s = "  Hola Mundo   "
-s.lstrip()
-print(s.rstrip())
-print(s.strip())
+print("---" + s.lstrip() + "---")
+print("---" + s.rstrip() + "---")
+print("---" + s.strip() + "---")
