@@ -14,3 +14,10 @@ print("comienza con Buen", s.startswith("Buen"))
 print("Posición de ido: ", s.find("ido"))
 print("Posición derecha de venida:", s.rfind("venida"))
 print("Número de o:", s.count("o"))
+
+## Elimando espacios en blanco en cadenas
+
+s = "  Hola Mundo   "
+s.lstrip()
+print(s.rstrip())
+print(s.strip())
