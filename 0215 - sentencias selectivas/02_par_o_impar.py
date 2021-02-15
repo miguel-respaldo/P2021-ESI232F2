@@ -1,6 +1,6 @@
 # Escribir "Escribe un número: " Sin Saltar
 # Leer num
-num = input("Escribe un número: ")
+num = int(input("Escribe un número: "))
 
 #// Si num % 2 = 0 Entonces
 # Si num mod 2 = 0 Entonces
