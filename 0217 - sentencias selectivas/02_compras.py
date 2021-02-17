@@ -9,7 +9,10 @@ print("2. Compu")
 print("3. Regri")
 print("4. Cel")
 producto = int(input("¿Que deseas comprar?"))
-precio = int(input("¿Cuanto cuesta?"))
+
+# Si el producto es mayor a 0 y menor a 5
+if producto > 0 and producto < 5:
+    precio = int(input("¿Cuanto cuesta?"))
 
 if producto == 1:
     if precio > 5000:
