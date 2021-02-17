@@ -23,7 +23,7 @@ Algoritmo compras
 				Escribir "Tienes un descuento de 10%"
 				precio_final <- precio * 0.9
 			Fin Si
-			Escribir "El precio final es", precio_final
+			Escribir "El precio final es ", precio_final
 			
 		2:
 			Si precio > 15000 Entonces
@@ -33,7 +33,7 @@ Algoritmo compras
 				Escribir "Tienes un descuento de 10%"
 				precio_final <- precio * 0.9
 			Fin Si
-			Escribir "El precio final es", precio_final
+			Escribir "El precio final es ", precio_final
 		3:
 			Si precio > 10000 Entonces
 				Escribir "Tienes un descuento de 20%"
@@ -42,7 +42,7 @@ Algoritmo compras
 				Escribir "Tienes un descuento de 10%"
 				precio_final <- precio * 0.9
 			Fin Si
-			Escribir "El precio final es", precio_final
+			Escribir "El precio final es ", precio_final
 		4:
 			Si precio > 8000 Entonces
 				Escribir "Tienes un descuento de 20%"
@@ -51,7 +51,7 @@ Algoritmo compras
 				Escribir "Tienes un descuento de 10%"
 				precio_final <- precio * 0.9
 			Fin Si
-			Escribir "El precio final es", precio_final
+			Escribir "El precio final es ", precio_final
 		De Otro Modo:
 			Escribir "El producto no existe"
 	Fin Segun
