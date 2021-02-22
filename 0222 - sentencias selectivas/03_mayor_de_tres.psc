@@ -21,6 +21,4 @@ Algoritmo mayor_a_tres
 		FinSi
 	FinSi
 	
-	
-	
 FinAlgoritmo
