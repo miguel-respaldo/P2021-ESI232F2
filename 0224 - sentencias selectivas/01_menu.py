@@ -11,7 +11,7 @@ num2 = float(input("Escribe otro número: "))
 
 print("1. Suma")
 print("2. Resta")
-print("3. Multiplicaicón")
+print("3. Multiplicación")
 print("4. División")
 print("")
 op = int(input("Opción: "))
@@ -28,6 +28,6 @@ elif op == 4:
         print("No se puede dividir entre 0")
     else:
         resultado = num1 / num2
-        print("La resta es:", resultado)
+        print("La división es:", resultado)
 else:
     print("Opción invalida.")
