@@ -6,5 +6,5 @@ print(cadena[0:3])
 print(cadena[:3])
 # subcadena del 7 al final de la cadena
 print(cadena[7:])
-# subcadena del 5 al 8
+# subcadena del 5 al 8 (no toca el 8)
 print(cadena[5:8])
