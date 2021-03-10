@@ -20,6 +20,7 @@ salida = ""
 for i in range(longitud):
     letra_int = random.randint(ord("a"), ord("z"))
     salida = salida + chr(letra_int)
+    print(i,": ",salida)
 
 print(salida)
 #    salida
