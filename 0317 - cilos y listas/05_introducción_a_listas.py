@@ -14,3 +14,6 @@ print("---------------")
 for elemento in lista_9:
     print(elemento)
 
+print("---------------")
+for elemento in range(len(lista_5)):
+    print(lista_5[elemento])
