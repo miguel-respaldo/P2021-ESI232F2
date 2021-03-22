@@ -1,4 +1,4 @@
-#Comprar  4 productos(tele, compu, refri, cel)
+3#Comprar  4 productos(tele, compu, refri, cel)
 # tele si 10 % < 5000 < 20 %
 # compu si 10 % < 15000 < 20 %
 # refri si 10 % < 10000 < 20 %

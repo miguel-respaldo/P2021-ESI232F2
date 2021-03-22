@@ -1,4 +1,4 @@
-# Raiz cuadrada
+4# Raiz cuadrada
 import math
 
 numero = int(input("Ingresa un número: "))
