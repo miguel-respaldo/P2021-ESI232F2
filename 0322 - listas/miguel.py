@@ -1,1 +1,1 @@
-|   z1|print("Hola")
+print("Hola ")
