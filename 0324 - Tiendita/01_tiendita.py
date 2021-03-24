@@ -1,4 +1,4 @@
-# Lista de los productos
+1# Lista de los productos
 lista_productos = ["papas", "refrescos", "tortillas", "jamon", "mazapan"]
 # Lista de los precios
 lista_precio =    [12,      10.5,         20,         40,  5,]
@@ -41,9 +41,9 @@ while opcion != 6:
 
     elif opcion == 3:
         tamano = len(lista_productos)
-        print("No.      Nombre       Precio")
+        print("{:<5s}{:<15s}{:>8s}".format("No.","Nombre","Precio"))
         for i in range(tamano):
-            print(i+1,". ",lista_productos[i],"  ", lista_precio[i])
+            print("{:<5d}{:<15s}{:>8.2f}".format(i+1,lista_productos[i],lista_precio[i]))
         print("------------------------")
         num_producto = int(input("Ingresa el número del prodcto a agregar: "))
         cant_producto = int(input("Cuantos articulos quieres de este producto: "))
