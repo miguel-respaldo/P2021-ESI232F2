@@ -35,9 +35,11 @@ while opcion != 6:
     elif opcion == 2:
         tamano = len(carrito_producto)
         print("----  Carrito ----------")
-        print("No.      Nombre         Precio         Cantidad")
+        print("{:<5s}{:<15s}{:>8s}{:>10s}".format("No.","Nombre", "Precio","Cantidad"))
+        #print("No.      Nombre         Precio         Cantidad")
         for i in range(tamano):
-            print(i+1,". ", lista_productos[ carrito_producto[i] ],"  ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
+            #print(i+1,". ", lista_productos[ carrito_producto[i] ],"  ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
+            print("{:<5d}{:<15s}{:>8.2f}{:>10d}".format(i+1,lista_productos[ carrito_producto[i] ],lista_precio[ carrito_producto[i] ],carrito_cantidad[i]))
 
     elif opcion == 3:
         tamano = len(lista_productos)
