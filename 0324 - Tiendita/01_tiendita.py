@@ -1,4 +1,4 @@
-1# Lista de los productos
+# Lista de los productos
 lista_productos = ["papas", "refrescos", "tortillas", "jamon", "mazapan"]
 # Lista de los precios
 lista_precio =    [12,      10.5,         20,         40,  5,]
