@@ -34,10 +34,10 @@ Algoritmo tiendita
 		
 		Segun opcion_menu Hacer
 			1:
-				tamano = 5
+				tamano <- 5
 				Escribir "No.    Nombre     Precio"
 				Para i<-1 Hasta tamano Con Paso 1 Hacer
-					Escribir i, "   ", lista_productos[i], "      ",lista_precios[i] 
+					Escribir i, "   ", lista_productos[i], "      ",lista_precios[i]	 
 				Fin Para
 				
 			2:
@@ -47,14 +47,12 @@ Algoritmo tiendita
 					Escribir i, "   ", lista_productos[ carrito_producto[i] ], "      ",lista_precios[ carrito_producto[i] ], "   ", carrito_cantidad[i] 
 				Fin Para
 			3:
-				tamano = 5
+				tamano <- 5
 				Escribir "No.    Nombre     Precio"
 				Para i<-1 Hasta tamano Con Paso 1 Hacer
 					Escribir i, "   ", lista_productos[i], "      ",lista_precios[i] 
 				Fin Para
 				Escribir "-----------------------------"
-				
-				
 				
 				Escribir "Ingresa el número de producto: " Sin Saltar
 				leer num_producto
