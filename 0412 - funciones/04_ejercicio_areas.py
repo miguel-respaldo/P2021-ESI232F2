@@ -1,4 +1,5 @@
 import math
+
 # Funcion qu despliega el Menu y pide un resultado
 def menu():
     print("selcciona una operación")
@@ -9,21 +10,27 @@ def menu():
     print("5) Salir")
     resultado = int(input("Selecciona una opción: "))
     return resultado
+
+
 def area_rec(base,altura):
     area = base*altura
     return area
+
 
 def area_tri(base,altura):
     area = (base*altura)/2
     return area
 
+
 def area_cua(lado):
     area = lado*2
     return area
 
+
 def area_cir(radio):
     area = (math.pi+(radio^2))/2
     return area
+
 
 opcion = 0
 while opcion != 5:
