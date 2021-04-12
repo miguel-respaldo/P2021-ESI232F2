@@ -26,11 +26,15 @@ def area_cir(radio):
     return area
 
 opcion = 0
-while opcion != 5:
+while opcion <= 5:
     opcion = menu()
     if opcion == 1:
+        base = float(input("Introduce el valor de la base del rectangulo: "))
+        altura = float(input("Introduce el valor de la altura del rectangulo: "))
+    elif opcion == 2:
         base = float(input("Introduce el valor de la base del rectangulo"))
         altura = float(input("Introduce el valor de la altura del rectangulo"))
-    elif opcion == 1:
-        base = float(input("Introduce el valor de la base del rectangulo"))
-        altura = float(input("Introduce el valor de la altura del rectangulo"))
+    elif opcion==3:
+        lado=float(input("introduce el valor del lado del cuadrado: "))
+    elif opcion==4:
+        radio=float(input("Ingrese el valor del radio del circulo: "))
