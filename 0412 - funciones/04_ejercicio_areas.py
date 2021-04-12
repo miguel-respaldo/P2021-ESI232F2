@@ -41,7 +41,7 @@ while opcion <= 5:
     elif opcion == 2:
         base = float(input("Introduce el valor de la base del rectangulo"))
         altura = float(input("Introduce el valor de la altura del rectangulo"))
-    elif opcion==3:
-        lado=float(input("introduce el valor del lado del cuadrado: "))
-    elif opcion==4:
-        radio=float(input("Ingrese el valor del radio del circulo: "))
+    elif opcion == 3:
+        lado = float(input("introduce el valor del lado del cuadrado: "))
+    elif opcion == 4:
+        radio = float(input("Ingrese el valor del radio del circulo: "))
