@@ -22,7 +22,7 @@ def area_cua(lado):
     return area
 
 def area_vir(radio):
-    area = (pi+(radio^2))/2
+    area = (math.pi+(radio^2))/2
     return area
 
 opcion = 0
