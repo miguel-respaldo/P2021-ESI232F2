@@ -36,8 +36,8 @@ opcion = 0
 while opcion != 5:
     opcion = menu()
     if opcion == 1:
-        base = float(int("Introduce el valor de la base del rectangulo"))
-        altura = float(int("Introduce el valor de la altura del rectangulo"))
+        base = float(input("Introduce el valor de la base del rectangulo"))
+        altura = float(input("Introduce el valor de la altura del rectangulo"))
     elif opcion == 1:
-        base = float(int("Introduce el valor de la base del rectangulo"))
-        altura = float(int("Introduce el valor de la altura del rectangulo"))
+        base = float(input("Introduce el valor de la base del rectangulo"))
+        altura = float(input("Introduce el valor de la altura del rectangulo"))
