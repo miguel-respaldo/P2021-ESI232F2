@@ -28,7 +28,7 @@ def area_cua(lado):
 
 
 def area_cir(radio):
-    area = (math.pi+(radio^2))/2
+    area = (math.pi*(radio^2))/2
     return area
 
 
