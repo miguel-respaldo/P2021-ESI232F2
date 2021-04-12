@@ -1,4 +1,5 @@
 
+# Funcion qu despliega el Menu y pide un resultado
 def menu():
     print("selcciona una operación")
     print("1) Calcular el área de un rectángulo")
@@ -12,5 +13,7 @@ def menu():
 
 opcion = 0
 
+# Mientras la opción sea diferente de 5
 while opcion != 5:
+    # Despliega el menu y regresa la opcion de usuario
     opcion = menu()
