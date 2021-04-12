@@ -6,6 +6,11 @@ def menu():
     print("3) Calcular el área de un cuadrado")
     print("4) Calcular el área de un círculo")
     print("5) Salir")
-    resultado = int(input("Selecciona una opción"))
+    resultado = int(input("Selecciona una opción: "))
     return resultado
-menu()
+
+
+opcion = 0
+
+while opcion != 5:
+    opcion = menu()
