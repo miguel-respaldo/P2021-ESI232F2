@@ -23,12 +23,12 @@ def area_tri(base,altura):
 
 
 def area_cua(lado):
-    area = lado*2
+    area = lado**2
     return area
 
 
 def area_cir(radio):
-    area = (math.pi*(radio^2))/2
+    area = (math.pi*(radio**2))/2
     return area
 
 
