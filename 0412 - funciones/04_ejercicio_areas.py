@@ -1,4 +1,4 @@
-
+import math
 # Funcion qu despliega el Menu y pide un resultado
 def menu():
     print("selcciona una operación")
@@ -9,11 +9,28 @@ def menu():
     print("5) Salir")
     resultado = int(input("Selecciona una opción: "))
     return resultado
+def area_rec(base,altura):
+    area = base*altura
+    return area
 
+def area_tri(base,altura):
+    area = (base*altura)/2
+    return area
+
+def area_cua(lado):
+    area = lado*2
+    return area
+
+def area_vir(radio):
+    area = (pi+(radio^2))/2
+    return area
 
 opcion = 0
-
-# Mientras la opción sea diferente de 5
 while opcion != 5:
-    # Despliega el menu y regresa la opcion de usuario
     opcion = menu()
+    if opcion == 1:
+        base = float(int("Introduce el valor de la base del rectangulo"))
+        altura = float(int("Introduce el valor de la altura del rectangulo"))
+    elif opcion == 1:
+        base = float(int("Introduce el valor de la base del rectangulo"))
+        altura = float(int("Introduce el valor de la altura del rectangulo"))
