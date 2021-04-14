@@ -1,3 +1,50 @@
+Funcion op_menu <- menu ()
+	Escribir "---------------------"
+	Escribir "1. Mostrar productos"
+	Escribir "2. Mostrar carrito"
+	Escribir "3. Agregar al carrito"
+	Escribir "..."
+	Escribir "6. Salir"
+	Escribir " Opcion: " Sin Saltar
+	Leer op_menu	
+Fin Funcion
+
+Funcion mostrar_productos ( l_productos, l_precios )
+	tamano <- 5
+	Escribir "No.    Nombre     Precio"
+	Para i<-1 Hasta tamano Con Paso 1 Hacer
+		Escribir i, "   ", l_productos[i], "      ",l_precios[i]	 
+	Fin Para
+Fin Funcion
+
+Funcion mostrar_carrito ( l_productos, l_precios,  c_producto, c_cantidad)
+	Escribir "--------  Carrito  ----------"
+	Escribir "No.    Nombre     Precio    Cantidad"
+	Para i<-1 Hasta cantidad Con Paso 1 Hacer
+		Escribir i, "   ", l_productos[ c_producto[i] ], "      ",l_precios[ c_producto[i] ], "   ", c_cantidad[i] 
+	Fin Para
+Fin Funcion
+
+Funcion agregar_carrito(l_productos, l_precios, c_producto, c_cantidad, cant)
+	
+	mostrar_productos(l_productos, l_precios)
+	
+	Escribir "-----------------------------"
+	
+	Escribir "Ingresa el número de producto: " Sin Saltar
+	leer num_producto
+	Escribir "Cuantos articulos quieres de este producto " Sin Saltar
+	leer cant_producto
+	
+	si num_producto > tamano Entonces
+		Escribir "No existe el producto"
+	SiNo
+		cant <- cant + 1
+		c_producto[ cant ] <- num_producto
+		c_cantidad[ cant ] <- cant_producto					
+	FinSi
+FinFuncion
+
 Algoritmo tiendita
 	
 	Dimension  lista_productos[5]
@@ -23,50 +70,16 @@ Algoritmo tiendita
 	opcion_menu = 0
 	
 	Mientras opcion_menu <> 6 Hacer
-		Escribir "---------------------"
-		Escribir "1. Mostrar productos"
-		Escribir "2. Mostrar carrito"
-		Escribir "3. Agregar al carrito"
-		Escribir "..."
-		Escribir "6. Salir"
-		Escribir " Opcion: " Sin Saltar
-		Leer opcion_menu	
 		
+		opncion_menu <- menu()
+
 		Segun opcion_menu Hacer
 			1:
-				tamano <- 5
-				Escribir "No.    Nombre     Precio"
-				Para i<-1 Hasta tamano Con Paso 1 Hacer
-					Escribir i, "   ", lista_productos[i], "      ",lista_precios[i]	 
-				Fin Para
-				
+				mostrar_productos(lista_productos, lista_precios)
 			2:
-				Escribir "--------  Carrito  ----------"
-				Escribir "No.    Nombre     Precio    Cantidad"
-				Para i<-1 Hasta cantidad Con Paso 1 Hacer
-					Escribir i, "   ", lista_productos[ carrito_producto[i] ], "      ",lista_precios[ carrito_producto[i] ], "   ", carrito_cantidad[i] 
-				Fin Para
+				mostrar_carrito(lista_productos, lista_precios, carrito_producto, carrito_cantidad)
 			3:
-				tamano <- 5
-				Escribir "No.    Nombre     Precio"
-				Para i<-1 Hasta tamano Con Paso 1 Hacer
-					Escribir i, "   ", lista_productos[i], "      ",lista_precios[i] 
-				Fin Para
-				Escribir "-----------------------------"
-				
-				Escribir "Ingresa el número de producto: " Sin Saltar
-				leer num_producto
-				Escribir "Cuantos articulos quieres de este producto " Sin Saltar
-				leer cant_producto
-				
-				si num_producto > tamano Entonces
-					Escribir "No existe el producto"
-				SiNo
-					cantidad <- cantidad + 1
-					carrito_producto[ cantidad ] <- num_producto
-					carrito_cantidad[ cantidad ] <- cant_producto					
-				FinSi
-				
+				agregar_carrito(lista_productos, lista_precios, carrito_producto, carrito_cantidad, cantidad)
 				
 			6:
 				Escribir "Gracias por usar el programa"
