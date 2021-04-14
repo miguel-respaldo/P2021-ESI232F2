@@ -20,6 +20,17 @@ def mostrar_productos(l_productos, l_precio):
         print("{:<5d}{:<15s}{:>8.2f}".format(i + 1, l_productos[i], l_precio[i]))
 
 
+def mostrar_carrito (l_productos,l_precio, c_cantidad):
+    tamano = len(carrito_producto)
+    print("----  Carrito ----------")
+    print("{:<5s}{:<15s}{:>8s}{:>10s}".format("No.", "Nombre", "Precio", "Cantidad"))
+    # print("No.      Nombre         Precio         Cantidad")
+    for i in range(tamano):
+        # print(i+1,". ", lista_productos[ carrito_producto[i] ],"  ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
+        print("{:<5d}{:<15s}{:>8.2f}{:>10d}".format(i + 1, l_productos[carrito_producto[i]], l_precio[carrito_producto[i]], c_cantidad[i]))
+
+
+
 # Lista de los productos
 lista_productos = ["papas", "refrescos", "tortillas", "jamon", "mazapan"]
 # Lista de los precios
@@ -40,14 +51,11 @@ while opcion != 6:
 
     if opcion == 1:
         mostrar_productos(lista_productos, lista_precio)
+
+
     elif opcion == 2:
-        tamano = len(carrito_producto)
-        print("----  Carrito ----------")
-        print("{:<5s}{:<15s}{:>8s}{:>10s}".format("No.","Nombre", "Precio","Cantidad"))
-        #print("No.      Nombre         Precio         Cantidad")
-        for i in range(tamano):
-            #print(i+1,". ", lista_productos[ carrito_producto[i] ],"  ",lista_precio[ carrito_producto[i] ], "   ", carrito_cantidad[i])
-            print("{:<5d}{:<15s}{:>8.2f}{:>10d}".format(i+1,lista_productos[ carrito_producto[i] ],lista_precio[ carrito_producto[i] ],carrito_cantidad[i]))
+        mostrar_carrito(lista_productos, lista_precio, carrito_cantidad)
+
 
     elif opcion == 3:
         tamano = len(lista_productos)
