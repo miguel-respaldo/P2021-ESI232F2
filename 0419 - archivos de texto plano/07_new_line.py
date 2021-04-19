@@ -1,0 +1,1 @@
+print("Esto\nes\nuna\nfrase\ncon\nenters")
