@@ -22,11 +22,11 @@ for letra in apellido_paterno[1:]:
         break
 RFC = RFC + letra
 
-# Primera letra de Nombre
-RFC = RFC + nombre[0]
-
 # Primera letra de Apellido Materno
 RFC = RFC + apellido_materno[0]
+
+# Primera letra de Nombre
+RFC = RFC + nombre[0]
 
 # Dos digitos del año
 if len(anio) == 4:
