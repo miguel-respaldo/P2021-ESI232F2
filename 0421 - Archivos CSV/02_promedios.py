@@ -25,9 +25,9 @@ def promedio_por_alumno(lector):
         promedio = 0.0
         if fila[0] == "nombre":
             continue
-        for i in range(1,5):
+        for i in range(1,len(fila)):
             promedio = promedio + float(fila[i])
-        promedio = promedio / 4.0
+        promedio = promedio / (len(fila)-1)
         print("El promedio de {:<8s} es {:>5.2f} ".format(fila[0], promedio))
 
 
