@@ -13,9 +13,11 @@ def promedio_por_materia(lector):
         else:
             for i in range(len(fila)-1):
                 lista_promedio[i] = lista_promedio[i] + float(fila[i+1])
-            contador_alumnos = contador_alumnos +1
-    for i in range(contador_alumnos):
+            contador_alumnos = contador_alumnos + 1
+
+    for i in range(len(lista_promedio)):
         lista_promedio[i] = lista_promedio[i] / contador_alumnos
+
     for i in range(len(lista_materias)):
         print("El promedio de la materia de {:<18s} es {:>5.2f}".format(lista_materias[i], lista_promedio[i]))
 
