@@ -39,7 +39,7 @@ def buscar_precio(numero):
         if fila[0] == "Producto":
             continue
         if contador == numero:
-            producto_a_buscar = fila[1]
+            precio_a_buscar = fila[1]
             break
         contador = contador + 1
     archivo.close()
