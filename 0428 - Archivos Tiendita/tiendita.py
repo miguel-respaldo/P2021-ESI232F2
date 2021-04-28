@@ -30,7 +30,7 @@ def tiendita():
     opcion_menu = 0
     while opcion_menu != 6:
         opcion_menu = menu()
-        if opcion_menu  == 1:
+        if opcion_menu == 1:
             productos.mostrar()
         elif opcion_menu == 2:
             carrito.mostrar()
