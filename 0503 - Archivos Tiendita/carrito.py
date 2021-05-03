@@ -46,7 +46,7 @@ def calcular_total():
 
 def borrar(numero):
     archivo = open(ARCHIVO_CARRITO,"r")
-    archivo_temporal = open("temporal.csv","w")
+    archivo_temporal = open("temporal.csv","w", newline="")
 
     lector = csv.reader(archivo)
     escritor = csv.writer(archivo_temporal)
