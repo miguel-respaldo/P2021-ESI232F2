@@ -10,6 +10,7 @@ archivo.close()
 print("------------------")
 
 buscar = "OxígEno"
+buscar = input("elemento: ")
 buscar = buscar.lower()
 archivo = open("ejemplo.csv", "r")
 lector = csv.reader(archivo)
